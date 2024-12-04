@@ -1,6 +1,4 @@
 - awk to tabularize tables
-- auto detect section header based on length after joining and prefix % or don't at all
-- auto detect paras and insert \n between
 - وقتی که یک لیست بین دو پارا قرار دارد یک اسلاید درست شود. پارای بعد از لیست جدا می‌شود
 text
 - li
@@ -14,3 +12,5 @@ eqn \quad (2.3)
 
 # done
 - rm header/footer; csplit rm header; bolstand didn't have footer; rm chapter title manually
+- auto detect section header based on length after joining and prefix % or don't at all
+- auto detect paras and insert \n between
