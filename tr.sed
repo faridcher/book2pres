@@ -9,7 +9,8 @@ s/–/-/g
 s/[&%$#_{}~^\]/\\&/g
 
 # greek letters
-s/α/$\\alpha$$/g
+s/α/$\\alpha$/g
+s/σ/$\\sigma$/g
 s/β/$\\beta$/g
 s/γ/$\\gamma$/g
 s/Σ/$\\Sigma$/g
