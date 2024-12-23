@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 # cd 4/
-# stdin=pdf.txt
+# stdin: pdf.txt
 
 csplit -z --suppress-matched - '//' '{*}' &> /dev/null
 

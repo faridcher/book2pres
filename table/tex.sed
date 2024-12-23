@@ -1,11 +1,13 @@
 #!/usr/bin/env -S sed -E -f
+# squeeze leading spaces
 # s/^ {2,}/\&/
 s/^ +//
-1s;^;\\begin{tabular}{}\n\\hline\n;
+# wrap tabular
+1s;^;\\resizebox{\\textwidth}{!}{\n\\begin{tabular}{}\n\\hline\n;
 # dehyphenate
 s/([[:alpha:]])- /\1/g
-# add & between columns' spaces
+# columnate: add delim (&) between columns' spaces
 s/ {2,}/&\&/g
-# append newline
+# append new row chars
 s/$/\\\\/
-$s;$;\n\\hline\n\\end{tabular};
+$s;$;\n\\hline\n\\end{tabular}\n};

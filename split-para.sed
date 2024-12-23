@@ -15,6 +15,7 @@
 # end: a) text
 # end: (1) text
 # end2: (1) text
+# end2? (1) text
 /^(Figure.+:|Table.+:|◆|-|@|%|\{)/!s,([[:alnum:])][.?:]) (\(?[[:alnum:]]\)),\1\n\2,g
 
 # list items

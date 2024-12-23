@@ -1,14 +1,16 @@
 #! /usr/bin/env -S sed -E -f
-# transliterate 
+# transliterate
 # replace invalid chars
 s/[“”]/"/g
 s/’/'/g
+# en em dash
 s/–/-/g
+# pipe
+s/∣/|/g
 
-# escape tex special chars don't do _ in equations! eqn are edited after this script
-s/[&%$#_{}~^\]/\\&/g
+s/±/$\\pm$/g
 
-# greek letters
+# greek letters. complete this from the undergradmath
 s/α/$\\alpha$/g
 s/σ/$\\sigma$/g
 s/β/$\\beta$/g
@@ -20,3 +22,8 @@ s/ε/$\\epsilon$/g
 s/φ/$\\phi$/g
 s/θ/$\\theta$/g
 s/∞/$\\infty$/g
+s/µ/$\\mu$/g
+s/∧/$\\wedge$/g
+s/λ/$\\lambda$/g
+s/×/$\\times$/g
+s/χ/$\\chi$/g
