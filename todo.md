@@ -1,5 +1,10 @@
-split sentence by ? but keep ?
-convert open books e.g. bookdown (pebesma, luc anselin) books to pres
+split sentence starts with Figure but lacks colon (:); now it 
+manual line break for : GIS. TEXT or 203. New
+wall-to-wall wall-towall
+nonoverlapping
+force split by 
+
+convert open books e.g. bookdown (pebesma, LUC Anselin) books to pres
 tables: create empty tabs/i.txt files for tables and cut/paste table text to them
 https://www.slidespilot.com/features/books-to-ppt
 https://tex.stackexchange.com/questions/199654/convert-latex-book-to-presentation-and-handouts

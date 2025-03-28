@@ -4,7 +4,8 @@
 s/[“”]/"/g
 s/’/'/g
 # en em dash
-s/–/-/g
+s/–/--/g
+s/—/---/g
 # pipe
 s/∣/|/g
 # hair space U+200A

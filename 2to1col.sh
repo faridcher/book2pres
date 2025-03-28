@@ -21,7 +21,9 @@ for i in xx??; do # xx[[:digit:]][[:digit:]]
     # xx03 4)           normal text$
     sed -E '/\t/!s;^ {16,};&\t;' |\
     # concat two columns of text
-  gawk -F $'\t' '{ x1=x1"\n"$1; x2=x2"\n"$2 } END { print(x1,"\n",x2) }'  > $i-sp
+  mawk -F $'\t' '{ x1=x1"\n"$1; x2=x2"\n"$2 } END { print(x1,"\n",x2) }'  > $i-sp
 done
 
 cat xx??-sp #> onecol.txt
+
+rm xx?? xx??-sp
