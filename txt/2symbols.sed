@@ -3,6 +3,8 @@
 # replace invalid chars
 s/[“”]/"/g
 s/’/'/g
+# minus sign in math
+s/−/-/g
 # en em dash
 s/–/--/g
 s/—/---/g

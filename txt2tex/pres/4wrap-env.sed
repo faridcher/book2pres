@@ -4,7 +4,7 @@
 # insert to holdspace
 # /^% /{h; d }
 # Titles: if length < 65 chars, prefix % and put in holdspace
-/^[[:print:]]{1,55}$/{/^([@-]|TASK|Figure|Table|شکل|جدول)/!{s/.+/% &/; h; d }}
+/^[[:print:]]{1,60}$/{/^([@-]|TASK|Figure|Table|شکل|جدول)/!{s/.+/% &/; h; d }}
 # later append hold to pat space and back-reference in wrap-env.sed
 # /^TASK/{s/.+/
 
