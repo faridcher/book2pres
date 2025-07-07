@@ -1,15 +1,17 @@
 #! /usr/bin/env -S sed -E -f
+# a block 
 # para, list, Figure, Table blocks to single line. Sections already are.
 # if not an empty line
 /^$/!{
   :x N
   # $a \n
+  # if found an empty line
   /\n$/{
     # join lines. the last \n replaced as well
     s/\n/ /g
     # dehyphenate
     s/([[:alpha:]])- /\1/g
-    # append newline (wrongly replaced before)
+    # append newline (all newlines replaced by space above)
     s/ $/\n/
     p
     d

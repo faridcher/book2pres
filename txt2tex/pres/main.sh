@@ -5,4 +5,4 @@ cd $(dirname $0)
     ./6split-para.sed |\
     ./7prefix-item.sed |\
     sed -E 's/(item|tiny) /\1\n/' |\
-    cat -s pre-fa.tex - <(echo \\end{document})
+    cat -s preamble-fa.tex - <(echo \\end{document})

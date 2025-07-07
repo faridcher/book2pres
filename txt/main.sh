@@ -1,10 +1,11 @@
 # first run chars-replace.sed then manually edit
 cd $(dirname $0)
 ./1escape-tex-special.sed |\
-./2symbols.sed |\
-./3para-detect.sed |\
- ./4spc-rm.sed |\
-  ./5block2line.sed |\
+./2tr-punct.sed |\
+./3greek2tex.sed |\
+./4indented-para-newline.sed |\
+ ./5spc-squeeze.sed |\
+  ./6block2line.sed |\
    # ./4wrap-env.sed |\
    #  ./5nest-lists.sed |\
     # ./6split-para.sed |\
